@@ -200,7 +200,7 @@ function getDataStudents() {
   if (selectedIA === 'dt') {
     alunos.forEach((item, index) => {
       item.EVASAO = item.Raca === 'negra' ? 'sim' : 'nao'
-    }
+    })
   }
   return [...alunos];
 }
