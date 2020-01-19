@@ -57,9 +57,19 @@ class StudentProvider extends React.Component {
     this.setState(() => {
       return {
         selectedIA: selected,
-        students: getDataStudents()
+        students: this.updateStudents(selected)
       }
     })
+  }
+
+  updateStudents = (selected) => {
+    if (selected === 'dt') {
+      alunos.forEach((item, index) => {
+        console.log('raça: ', item.Raca, ' eva: ', item.EVASAO)
+        item.EVASAO = item.Raca === 'negra' ? 'sim' : 'nao'
+      })
+    }
+    return [...alunos];
   }
 
   updatePosition = () => {
@@ -197,12 +207,6 @@ function getDataStudents() {
     item.NOTA_MAT = item.NOTA_MAT / 10.0
     item.NOTA_MAT = item.NOTA_MAT === 1 ? 10.0 : item.NOTA_MAT.toFixed(2)
   })
-  if (selectedIA === 'dt') {
-    alunos.forEach((item, index) => {
-      item.EVASAO = item.Raca === 'negra' ? 'sim' : 'nao'
-    })
-  }
-  return [...alunos];
 }
 
 export { StudentProvider, StudentConsumer };
