@@ -56,7 +56,8 @@ class StudentProvider extends React.Component {
   setSelectedIA = (selected) => {
     this.setState(() => {
       return {
-        selectedIA: selected
+        selectedIA: selected,
+        students: getDataStudents()
       }
     })
   }
@@ -195,8 +196,12 @@ function getDataStudents() {
     item.NOTA_FMI = item.NOTA_FMI === 1 ? 10.0 : item.NOTA_FMI.toFixed(2)
     item.NOTA_MAT = item.NOTA_MAT / 10.0
     item.NOTA_MAT = item.NOTA_MAT === 1 ? 10.0 : item.NOTA_MAT.toFixed(2)
-
   })
+  if (selectedIA === 'dt') {
+    alunos.forEach((item, index) => {
+      item.EVASAO = item.Raca === 'negra' ? 'sim' : 'nao'
+    }
+  }
   return [...alunos];
 }
 
