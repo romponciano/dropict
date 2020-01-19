@@ -37,7 +37,7 @@ export default class IASelect extends React.Component {
                       </h6>
                       <hr></hr>
                       <p>Olá! Eu sou o Analista de Vizinhança! Para fazer minhas predições eu avalio o quanto um estudante é parecido com outros estudantes. Baseado nessa semelhança eu vejo em qual grupo o estudante se encaixa melhor.</p>
-                      <p><strong>Eu costumo acertar em 81.03% dos casos!</strong></p>
+                      <p><strong>Eu costumo acertar em 83.84% dos casos!</strong></p>
                     </div>
                     <div id="knn-bar" className="card-footer p-0 m-0" style={{ height: "15px" }}></div>
                   </div>
@@ -78,8 +78,8 @@ export default class IASelect extends React.Component {
                         <img id="dnn-gif" width="200px" height="200px" src="img/dnn-animated.gif" alt="dnn" />
                       </h6>
                       <hr></hr>
-                      <p>Olá! Eu sou a Rede Neural! Para realizar minhas predições eu utilizo neurônicos capazes de realizar análises estatísticas que me ajudam a encontrar o resultado mais provável para um determinado estudante.</p>
-                      <p><strong>Eu costumo acertar em 84.71% dos casos!</strong></p>
+                      <p>Olá! Eu sou a Rede Neural! Para realizar minhas predições eu utilizo neurônios capazes de realizar análises estatísticas que me ajudam a encontrar o resultado mais provável para um determinado estudante.</p>
+                      <p><strong>Eu costumo acertar em 88.46% dos casos!</strong></p>
                     </div>
                     <div id="dnn-bar" className="card-footer p-0 m-0" style={{ height: "15px" }}></div>
                   </div>
