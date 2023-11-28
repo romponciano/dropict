@@ -67,3 +67,4 @@ ui/.npm
 ui/package-lock.json
 ui/build
 ui/public
+.vscode
