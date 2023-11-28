@@ -65,7 +65,6 @@ class StudentProvider extends React.Component {
   updateStudents = (selected) => {
     if (selected === 'dt') {
       alunos.forEach((item, index) => {
-        console.log('raça: ', item.Raca, ' eva: ', item.EVASAO)
         item.EVASAO = item.Raca === 'negra' ? 'sim' : 'nao'
       })
     }

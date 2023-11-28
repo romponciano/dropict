@@ -63,3 +63,7 @@ ui/.npm
 
 # dotenv environment variables file
 .env
+
+ui/package-lock.json
+ui/build
+ui/public
