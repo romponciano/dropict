@@ -1,3 +1,4 @@
 [submodule "api"]
 	path = api
 	url = https://github.com/romponciano/dropict-model-api
+	update = merge
