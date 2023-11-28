@@ -113,7 +113,7 @@ class StudentProvider extends React.Component {
   }
 
   requestPrediction = () => {
-    fetch('https://dropict-model-api.herokuapp.com/predict', {
+    fetch('https://dropict-model-api.onrender.com/predict', {
       method: 'POST',
       headers: new Headers({
         'Authorization': '!#7Romulo7#!',
