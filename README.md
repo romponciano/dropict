@@ -2,7 +2,7 @@
 
 You can check the app running at https://dropict-37.web.app/
 
-Notebook Experiments at https://github.com/romponciano/dropict-model-api/tree/604585212aeb0000ed626ec5ad21f453b3f39876/train-models-process
+Notebook Experiments at https://github.com/romponciano/dropict-model-api/tree/master/train-models-process
 
 Full research description at https://github.com/romponciano/dropict/blob/master/dropict-research-project.pdf
 
